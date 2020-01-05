@@ -1,0 +1,84 @@
+
+    .navbar-nav{
+        margin-top:60px;
+    }
+
+    #brand-image{
+        height:80px;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mat-slider {
+        width: 70%;
+        align-self:center;
+      }
+
+    .sliderElement{
+        width:70%;
+        align-self:center;
+        margin-left:10%;
+    }
+
+    .moodContainer{
+        display: flex;
+        flex-direction: column;
+        margin-bottom:60px;
+    }
+
+    .resetBtn{
+        margin-top:-50px;
+        margin-bottom:70px;
+        width:110px;
+        align-self: center;
+    }
+    .programmes{
+        height:300px;
+        align-self: center;
+    }
+
+    table {
+        text-align: center;
+        border-spacing: 10px;
+        border-collapse: separate;
+        width: 100%;
+    }
+    .programmeImg td {
+        background-color: #F4F4F4;
+        width:150px;
+        height:190px;
+    }
+
+    .programmeImg td img{
+        height: 190px;
+        width:150px;
+        margin-top:-20px;
+    }
+
+    .uploadContent{
+        margin:auto;
+        width:30%;
+    }
+
+    .mat-raised-button{
+        margin-top:10px;
+    }
+
+    #processedText{
+        margin-top:8px;
+        color:#1C8333;
+        font-size:1.2em;
+        text-decoration: bold;
+        margin: 0 auto;
+    }
+
+    #helpWithUpload code{
+        text-align: center;
+    }
+
+    footer{
+        margin-top:150px;
+    }

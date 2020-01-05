@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<programme-data>
+        <title>Programme Data</title>
+        <programme id="1">
+                <name>Beauty and the Beast</name>
+                <image-path>../../assets/programmeShowChoices/beautybeast.jpg</image-path>
+                <mood>Happy</mood>
+        </programme>
+        <programme id="2">
+                <name>Bridge Of Spies</name>
+                <image-path>../../assets/programmeShowChoices/bridgespies.jpg</image-path>
+                <mood>Wide Awake, Fearless, Agitated</mood>
+        </programme>
+        <programme id="3">
+                <name>The Danish Girl</name>
+                <image-path>../../assets/programmeShowChoices/danishgirl.jpg</image-path>
+                <mood>Sad, Calm</mood>
+        </programme>
+        <programme id="4">
+                <name>Deadpool</name>
+                <image-path>../../assets/programmeShowChoices/deadpool.jpg</image-path>
+                <mood>Wide Awake, Fearless</mood>
+        </programme>
+        <programme id="5">
+                <name>Ex-Machina</name>
+                <image-path>../../assets/programmeShowChoices/exmachina.jpg</image-path>
+                <mood>Agitated</mood>
+        </programme>
+        <programme id="6">
+                <name>Fantastic Beats and Where to Find Them</name>
+                <image-path>../../assets/programmeShowChoices/fantasticbeasts.jpg</image-path>
+                <mood>Wide Awake, Happy</mood>
+        </programme>
+        <programme id="7">
+                <name>The Hateful Eight</name>
+                <image-path>../../assets/programmeShowChoices/hateful8.jpg</image-path>
+                <mood>Fearless, Scared</mood>
+        </programme>
+        <programme id="8">
+                <name>Hell or High Water</name>
+                <image-path>../../assets/programmeShowChoices/hellorhighwater.jpg</image-path>
+                <mood>Fearless, Agitated</mood>
+        </programme>
+        <programme id="9">
+                <name>Jackie</name>
+                <image-path>../../assets/programmeShowChoices/jackie.jpg</image-path>
+                <mood>Calm, Tired</mood>
+        </programme>
+        <programme id="10">
+                <name>Jason Bourne</name>
+                <image-path>../../assets/programmeShowChoices/jasonbourne.jpg</image-path>
+                <mood>Fearless, Scared, Agitated</mood>
+        </programme>
+        <programme id="11">
+                <name>Kong</name>
+                <image-path>../../assets/programmeShowChoices/kong.jpg</image-path>
+                <mood>Wide Awake, Scared</mood>
+        </programme>
+        <programme id="12">
+                <name>La La Land</name>
+                <image-path>../../assets/programmeShowChoices/lalaland.jpg</image-path>
+                <mood>Happy, Calm</mood>
+        </programme>
+        <programme id="13">
+                <name>Manchester By The Sea</name>
+                <image-path>../../assets/programmeShowChoices/manchesterbysea.jpg</image-path>
+                <mood>Calm, Wide Awake, Sad, Tired</mood>
+        </programme>
+        <programme id="14">
+                <name>The Martian</name>
+                <image-path>../../assets/programmeShowChoices/martian.jpg</image-path>
+                <mood>Wide Awake, Agitated</mood>
+        </programme>
+        <programme id="15">
+                <name>Mockingjay</name>
+                <image-path>../../assets/programmeShowChoices/mockingjay.jpg</image-path>
+                <mood>Happy</mood>
+        </programme>
+        <programme id="16">
+                <name>Secret Life of Pets</name>
+                <image-path>../../assets/programmeShowChoices/secretlifepets.jpg</image-path>
+                <mood>Happy, Calm, Tired</mood>
+        </programme>
+        <programme id="17">
+                <name>X-men</name>
+                <image-path>../../assets/programmeShowChoices/xmen.jpg</image-path>
+                <mood>Tired</mood>
+        </programme>
+        <programme id="18">
+                <name>Moonlight</name>
+                <image-path>../../assets/programmeShowChoices/moonlight.png</image-path>
+                <mood>Sad, Tired</mood>
+        </programme>
+        <programme id="19">
+                <name>The Place beyond The Pines</name>
+                <image-path>../../assets/programmeShowChoices/beyondthepines.jpg</image-path>
+                <mood>Sad</mood>
+        </programme>
+        <programme id="20">
+                <name>Remember Me</name>
+                <image-path>../../assets/programmeShowChoices/rememberme.jpeg</image-path>
+                <mood>Sad</mood>
+        </programme>
+        <programme id="21">
+                <name>Get Out</name>
+                <image-path>../../assets/programmeShowChoices/getout.jpeg</image-path>
+                <mood>Scared</mood>
+        </programme>
+        <programme id="22">
+                <name>Rings</name>
+                <image-path>../../assets/programmeShowChoices/rings.jpg</image-path>
+                <mood>Scared</mood>
+        </programme>
+        <programme id="23">
+                <name>Going In Style</name>
+                <image-path>../../assets/programmeShowChoices/goinginstyle.jpg</image-path>
+                <mood>Tired</mood>
+        </programme>
+        
+
+</programme-data>

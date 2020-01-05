@@ -1,0 +1,124 @@
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img id="brand-image" alt="Sky Logo" src="../../assets/images/sky-logo.png" />
+            </a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="#moodContainer">Moodslider</a></li>
+            <li><a href="#uploadContent">Upload File</a></li>
+          </ul>
+        </div>
+      </nav>
+      <br><h4 class="text-muted" align="center">Upload a file, then select how you feel</h4><br>
+<div class="wrapper">
+    <!-- MOOD SLIDER START -->
+    <div class="moodContainer">
+        <div class="sliderElement">
+            <span id="leftText">Agitated</span>
+            <mat-slider value="50" (input)="onSliderInputChange($event, 'Agitated,Calm')"></mat-slider>
+            <span id="rightText">Calm</span>
+        </div>
+        <div class="sliderElement">
+            <span id="leftText">Happy</span>
+            <mat-slider value="50" (input)="onSliderInputChange($event, 'Happy,Sad')"></mat-slider>
+            <span id="rightText">Sad</span>
+        </div>
+        <div class="sliderElement">
+            <span id="leftText">Tired</span>
+            <mat-slider value="50" (input)="onSliderInputChange($event, 'Tired,Wide Awake')"></mat-slider>
+            <span id="rightText">Wide Awake</span>
+        </div>
+        <div class="sliderElement">
+            <span id="leftText">Scared</span>
+            <mat-slider value="50" (input)="onSliderInputChange($event, 'Scared,Fearless')"></mat-slider>
+            <span id="rightText">Fearless</span>
+        </div>
+    </div>
+    <!-- MOOD SLIDER END -->
+
+    <!-- PROGRAMMES START (should remove hardcoding indexes) -->
+    <div class="programmes">
+        <table cellspacing="2">
+            <tr class="programmeImg">
+                <td>No Content
+                    <img *ngIf="suggestedProgrammes.length > 0" mat-card-image [src]="suggestedProgrammes[0].getImgPath()">
+                </td>
+                <td>No Content
+                    <img *ngIf="suggestedProgrammes.length > 1" mat-card-image [src]="suggestedProgrammes[1].getImgPath()">
+                </td>
+                <td>No Content
+                    <img *ngIf="suggestedProgrammes.length > 2" mat-card-image [src]="suggestedProgrammes[2].getImgPath()">
+                </td>
+                <td>No Content
+                    <img *ngIf="suggestedProgrammes.length > 3" mat-card-image [src]="suggestedProgrammes[3].getImgPath()">
+                </td>
+                <td>No Content
+                    <img *ngIf="suggestedProgrammes.length > 4" mat-card-image [src]="suggestedProgrammes[4].getImgPath()">
+                </td>
+            </tr>
+            <tr class="programmeTitle">
+                <td>{{suggestedProgrammes.length > 0 && suggestedProgrammes[0].name || 'No Content'}}</td>
+                <td>{{suggestedProgrammes.length > 1 && suggestedProgrammes[1].name || 'No Content'}}</td>
+                <td>{{suggestedProgrammes.length > 2 && suggestedProgrammes[2].name || 'No Content'}}</td>
+                <td>{{suggestedProgrammes.length > 3 && suggestedProgrammes[3].name || 'No Content'}}</td>
+                <td>{{suggestedProgrammes.length > 4 && suggestedProgrammes[4].name || 'No Content'}}</td>
+            </tr>
+        </table>
+
+    </div>
+    <!-- PROGRAMMES END -->
+
+    <div class="uploadContent" align="center">
+        <div>
+            <input type='file' accept='text/xml' (change)='openFile($event)'>
+            <button type="button" (click)="processXML()" id="uploadBtn" mat-raised-button color="primary">Process File</button>
+            <br />
+            <div id="processedText">{{processed}}</div>
+        </div>
+    </div>
+    <!-- HELP SECTION START-->
+    <div id="helpWithUpload" align="center">
+        <button mat-button color="accent" (click)="openHelpSection()">Need Help?</button>
+        <br />
+        <div *ngIf="helpSection">
+            <br />
+            <p class="text-muted">Please upload a '.xml' file with the following format</p>
+            <code>&lt;?xml version="1.0" encoding="UTF-8"?> <br>
+                        &lt;programme-data&gt;<br>
+                        &lt;title&gt;Programme Data&lt;/title&gt;<br>
+                        &lt;programme id="UNIQUE NUMBER"> <br>
+                        &lt;name>title of programme&lt;/name> <br>
+                        &lt;image>path to image of programme&lt;/image> <br>
+                        &lt;mood>Select a mood from 'Agitated/Calm, Happy/Sad, Tired/Wide Awake, Scared/Fearless (can have multiple moods)'&lt;/mood> <br>
+                        &lt;/programme> <br>
+                        &lt;/programme-data>
+                    </code>
+        </div>
+    </div>
+    <!-- HELP SECTIOn END-->
+
+    <!-- FOOTER START -->
+    <footer id="contact">
+        <div class="container">
+            <div>
+                <div class="text-center">
+                    <h4><strong>Contact Us</strong></h4>
+                    <p>Grant Way <br> Isleworth <br> TW7 5QD</p>
+                    <ul class="list-unstyled">
+                        <li>
+                            08442 411 411
+                        </li>
+                        <li>
+                            <a href="mailto:startingout@sky.uk">startingout@sky.uk</a>
+                        </li>
+                    </ul> <br>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Moodslider 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER START -->
+</div>
